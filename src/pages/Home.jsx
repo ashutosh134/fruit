@@ -55,7 +55,7 @@ const Home = () => {
        
         <div className="bg-lime-400 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="../src/assests/carrot.jpg" className="w-full h-[245px] object-cover" alt="Vegetables" />
+            <img src="./public/carrot.jpg" className="w-full h-[245px] object-cover" alt="Vegetables" />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">VEGETABLES</h3>
