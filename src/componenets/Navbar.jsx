@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const Navbar = () => {
 
 const {cartItem , wishList} = useSelector(state=>state.cart)
@@ -21,7 +23,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
   
     
   
-      <Link to={"/"} className="shrink-0"><img src="../src/assests/image-4.png" alt="logo"
+      <Link to={"/"} className="shrink-0"><img src="/assests/image-4.png" alt="logo"
           className='md:w-[80px] w-16' />
       </Link>
   

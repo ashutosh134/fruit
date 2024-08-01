@@ -9,7 +9,7 @@ const FooterOne = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="lg:flex lg:items-center">
           <a href="javascript:void(0)">
-            <img src="../src/assests/image-4.png" alt="logo" className="w-52 " />
+            <img src="/assests/image-4.png" alt="logo" className="w-52 " />
           </a>
         </div>
 
