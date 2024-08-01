@@ -59,7 +59,7 @@ const Fruit = () => {
               </div>
             </div>
             <button type="button"
-              class="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-lime-500 hover:bg-lime-700" onClick={()=>handleAdd(fruit)}>Add</button>
+              class="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700" onClick={()=>handleAdd(fruit)}>Add</button>
           </div>
         </div>
         ))

@@ -55,7 +55,7 @@ const Dairy = () => {
               </div>
             </div>
         <button type="button"
-          className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-lime-500 hover:bg-lime-700"onClick={()=>handleAdd(dairy)}>Add</button>
+          className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700"onClick={()=>handleAdd(dairy)}>Add</button>
       </div>
     </div>
      ))

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const FooterOne = () => {
   return (
     
-    <div className='bg-amber-400 font-[sans-serif] tracking-wide  '>
-       <footer className="bg-amber-400 p-10 font-[sans-serif] tracking-wide">
+    <div className='bg-teal-400 font-[sans-serif] tracking-wide  '>
+       <footer className="bg-teal-400 p-10 font-[sans-serif] tracking-wide">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="lg:flex lg:items-center">
           <a href="javascript:void(0)">
@@ -80,7 +80,7 @@ const FooterOne = () => {
       </p>
     </footer>
     
-     <footer className="bg-green-600 text-white p-4 mt-8">
+     <footer className="bg-red-500 text-white p-4 mt-8">
         <div className="container mx-auto text-center">
             <p>&copy; 2024 Fresh Harvest Market. All rights reserved.</p>
             <p><Link to={"/privacy"} className="hover:underline">Privacy Policy</Link> | <Link to={"/terms"} className="hover:underline">Terms of Service</Link></p>

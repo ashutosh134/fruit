@@ -47,7 +47,7 @@ const WishList = () => {
           <p className='text-lg text-gray-600 mt-2'>Looks like you haven't added any items to your wishlist. Start browsing and add your favorites!</p>
           <Link to={"/"}>
             <button type="button"
-              className="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-lime-400 text-base text-gray-800 font-semibold rounded-xl">
+              className="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-amber-400 text-base text-gray-800 font-semibold rounded-xl">
             
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-800">
                 <path d="M3 3h2l3 8h13l3-8h2"/>

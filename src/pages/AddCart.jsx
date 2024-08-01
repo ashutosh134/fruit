@@ -63,7 +63,7 @@ const AddCart = () => {
           <p className='text-lg text-gray-600 mt-2'>Looks like your cart is empty. Start shopping to add items!</p>
           <Link to={"/"}>
             <button type="button"
-              className="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-lime-400 text-base text-gray-800 font-semibold rounded-xl">
+              className="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-amber-400 text-base text-gray-800 font-semibold rounded-xl">
               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 3h2l3 8h13l3-8h2m-9 16a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
               </svg>
@@ -83,7 +83,7 @@ const AddCart = () => {
     <div className='py-[50px] px-6'>
       <div className="font-sans md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4">
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="md:col-span-2 bg-amber-300 p-4 rounded-md">
+          <div className="md:col-span-2 bg-teal-300 p-4 rounded-md">
             <h2 className="text-2xl font-bold text-gray-800">Cart</h2>
             <hr className="border-red-500 mt-4 mb-8" />
 
@@ -117,7 +117,7 @@ const AddCart = () => {
 
                   <div className="ml-auto flex flex-col gap-5 ">
                             <div className="flex items-start gap-4 justify-end">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 cursor-pointer fill-amber-300 inline-block" viewBox="0 0 64 64">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 cursor-pointer fill-teal-300 inline-block" viewBox="0 0 64 64">
                                     <path d="M45.5 4A18.53 18.53 0 0 0 32 9.86 18.5 18.5 0 0 0 0 22.5C0 40.92 29.71 59 31 59.71a2 2 0 0 0 2.06 0C34.29 59 64 40.92 64 22.5A18.52 18.52 0 0 0 45.5 4ZM32 55.64C26.83 52.34 4 36.92 4 22.5a14.5 14.5 0 0 1 26.36-8.33 2 2 0 0 0 3.27 0A14.5 14.5 0 0 1 60 22.5c0 14.41-22.83 29.83-28 33.14Z" data-original="#000000"></path>
                                 </svg>
 
@@ -196,7 +196,7 @@ const AddCart = () => {
           </div> */}
 
 
-<div className="bg-lime-400 rounded-md px-4 py-6 h-max shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
+<div className="bg-white rounded-md px-4 py-6 h-max shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
                     <ul className="text-gray-800 space-y-4">
                         <li className="flex flex-wrap gap-4 text-">Shipping <span className="ml-auto font-bold">${shipping}</span></li>
                         <li className="flex flex-wrap gap-4 text-"> Tax <span className="ml-auto font-bold">${tax}</span></li>
@@ -206,7 +206,7 @@ const AddCart = () => {
                     </ul>
 
                     <div className="mt-8 space-y-2">
-                <Link to={"/buy"}>       <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-white hover:bg-red-500 text-black rounded-md">Buy Now</button></Link>
+                <Link to={"/buy"}>       <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-teal-300 hover:bg-red-500 text-black rounded-md">Buy Now</button></Link>
                      <Link to={"/"} className='' >  <button type="button" className=" my-2 text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-amber-400 hover:bg-amber-600 text-gray-800 border border-gray-300 rounded-md">Continue Shopping  </button></Link>
                     </div>
 

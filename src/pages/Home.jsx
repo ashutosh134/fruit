@@ -25,19 +25,19 @@ const Home = () => {
 
         <div className='md:w-1/2 mt-8 md:mt-0'>
           <img src="/assests/image-1.jpg" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
-          <marquee><h1 className="text-4xl md:text-6xl text-center text-lime-600 py-4 font-bold">FOREVER FRESH</h1></marquee>
+          <marquee><h1 className="text-4xl md:text-6xl text-center text-red-500 py-4 font-bold">FOREVER FRESH</h1></marquee>
         </div>
       </div>
 
     
-      <hr className='w-full h-1 bg-amber-500 mt-16 mb-8' />
+      <hr className='w-full h-1 bg-teal-500 mt-16 mb-8' />
 
       
       <h1 className='text-5xl md:text-6xl text-center text-red-500 font-bold mb-12'>OUR PRODUCTS</h1>
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
      
-        <div className="bg-amber-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/dragon.jpg" className="w-full h-[245px] object-cover" alt="Fruits" />
           </div>
@@ -53,7 +53,7 @@ const Home = () => {
         </div>
 
        
-        <div className="bg-lime-400 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/carrot.jpg" className="w-full h-[245px] object-cover" alt="Vegetables" />
           </div>
@@ -69,7 +69,7 @@ const Home = () => {
         </div>
 
       
-        <div className="bg-amber-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/milk.jpg" className="w-full h-[245px] object-cover" alt="Dairy" />
           </div>
@@ -85,23 +85,23 @@ const Home = () => {
         </div>
       </div>
     
-      <section className=' my-12 py-16 px-12 bg-lime-400'>
+      <section className=' my-12 py-16 px-12 bg-red-500'>
         <h2 className='text-4xl md:text-5xl text-center font-bold mb-8'>What Our Customers Say</h2>
         <div className='flex flex-col md:flex-row justify-between gap-8'>
         
-          <div className='bg-white p-6 rounded-lg shadow-lg'>
+          <div className='bg-teal-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"Excellent quality produce, always fresh and delivered on time!"</p>
             <p className='mt-4 font-semibold text-right'>- Jane Doe</p>
           </div>
 
     
-          <div className='bg-white p-6 rounded-lg shadow-lg'>
+          <div className='bg-teal-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"A fantastic variety of fruits and vegetables. Highly recommended!"</p>
             <p className='mt-4 font-semibold text-right'>- John Smith</p>
           </div>
 
       
-          <div className='bg-white p-6 rounded-lg shadow-lg'>
+          <div className='bg-teal-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"The best online shopping experience for fresh produce!"</p>
             <p className='mt-4 font-semibold text-right'>- Mary Johnson</p>
           </div>
