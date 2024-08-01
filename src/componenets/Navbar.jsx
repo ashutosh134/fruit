@@ -79,13 +79,13 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
        
   
         <ul
-          className='flex flex-wrap lg:gap-12 sm:gap-2 md:gap-4 '>
+          className='flex  lg:gap-12 sm:gap-2 md:gap-2 '>
           
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/"}
-              className='hover:text-[#007bff] text-[#007bff] font-semibold block text-[18px]'>Home</Link></li>
+              className='hover:text-[#007bff] text-[#007bff] font-semibold block lg:text-[16px]'>Home</Link></li>
           <li className='group max-lg:border-b max-lg:px-3 max-lg:py-3 relative'>
             <Link to={"/product"}
-              className='hover:text-[#007bff] hover:fill-[#007bff] text-red-500 font-semibold text-[18px] block'>All Products<svg
+              className='hover:text-[#007bff] hover:fill-[#007bff] text-red-500 font-semibold lg:text-[16px] block'>Products<svg
                 xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block"
                 viewBox="0 0 24 24">
                 <path
@@ -172,9 +172,9 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
           </li>
           
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/about"}
-              className='hover:text-[#007bff] text-red-500 font-semibold text-[18px] block'>About</Link></li>
+              className='hover:text-[#007bff] text-red-500 font-semibold lg:text-[16px] block'>About</Link></li>
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/contact"}
-              className='hover:text-[#007bff] text-red-500 font-semibold text-[18px] block '>Contact</Link></li>
+              className='hover:text-[#007bff] text-red-500 font-semibold lg:text-[16px] block '>Contact</Link></li>
           
         </ul>
       </div>
