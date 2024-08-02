@@ -159,7 +159,8 @@ const cartSlice = createSlice({
               state.wishList = state.wishList.filter((item)=>item.id !== action.payload)
             }
 
-
+            localStorage.setItem("wishList" , JSON.stringify(state.wishList))
+            localStorage.setItem("cartItem" , JSON.stringify(state.cartItem))
 
           }
 
