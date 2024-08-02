@@ -148,6 +148,19 @@ const cartSlice = createSlice({
  
             }
         
+          },
+
+
+          move : (state,action) =>{
+            const moveToCart = state.wishList.find((item)=>item.id === action.payload)
+
+            if(moveToCart){
+              state.cartItem.push(moveToCart)
+              state.wishList = state.wishList.filter((item)=>item.id !== action.payload)
+            }
+
+
+
           }
 
 
@@ -159,6 +172,6 @@ const cartSlice = createSlice({
 
 })
 
-export const { addTo , remove , decrease , clear , calculateTotal , updateShipping , updateTax , wishListAdd , removeCart, wishTot , clearWish} = cartSlice.actions
+export const { addTo , remove , decrease , clear , calculateTotal , updateShipping , updateTax , wishListAdd , removeCart, wishTot , clearWish, move} = cartSlice.actions
 
 export default cartSlice.reducer;
