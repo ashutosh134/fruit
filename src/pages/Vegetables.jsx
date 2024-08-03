@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addTo, wishListAdd } from '../features/fruits/cartSlice'
 import { toast } from 'react-toastify'
+import { getFruits } from '../features/fruits/fruitSlice'
 
 const Vegetables = () => {
 
-    const {game} = useSelector(state => state.fruits)
+    const {game , isLoading} = useSelector(state => state.fruits)
 
     const dispatch =useDispatch()
+
+    useEffect(()=>{
+      dispatch(getFruits())
+      
+      },[])
 
    const handleAdd = (fruits) =>{
 
@@ -21,7 +27,39 @@ const Vegetables = () => {
     toast.success("added in wishList")
   }
 
-  const filteredFruits = game.filter((vegetables)=> vegetables.category === "Vegetables") 
+  const filteredFruits = game.filter((vegetables)=> vegetables.category === "Vegetables")
+  
+  
+  if (isLoading) {
+    return (
+      <div className="flex flex-col items-center justify-center p-20">
+        <svg
+          className="animate-spin h-12 w-12 text-red-500"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          />
+          <path
+            className="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 1 1 16 0A8 8 0 0 1 4 12zm4 0a4 4 0 1 0 8 0A4 4 0 0 0 8 12z"
+          />
+        </svg>
+        <h1 className="mt-4 text-center text-6xl text-red-500 font-bold">
+          LOADING ......
+        </h1>
+      </div>
+    );
+  }
+
 
 
   return (
