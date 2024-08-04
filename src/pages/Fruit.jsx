@@ -38,27 +38,8 @@ const Fruit = () => {
 
     if (isLoading) {
       return (
-        <div className="flex flex-col items-center justify-center p-20">
-          <svg
-            className="animate-spin h-12 w-12 text-red-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <circle
-              className="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              strokeWidth="4"
-            />
-            <path
-              className="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 1 1 16 0A8 8 0 0 1 4 12zm4 0a4 4 0 1 0 8 0A4 4 0 0 0 8 12z"
-            />
-          </svg>
+        <div className="flex flex-col items-center justify-center p-20 ">
+         <img src="/assests/fruit.jpg" alt="" className='w-[320px] h-[200px]' />
           <h1 className="mt-4 text-center text-6xl text-red-500 font-bold">
             LOADING ......
           </h1>
@@ -72,10 +53,11 @@ const Fruit = () => {
 
 
     <div className='py-8'> <h1 className='text-center text-amber-500 font-bold text-5xl py-4'>FRUITS</h1>
+    
 
 
 
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
 
       {
         filteredFruits.map((fruit)=>(

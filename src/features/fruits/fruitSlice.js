@@ -3,15 +3,17 @@ import { fetchFruits } from "./fruitService";
 
 const fruitSlice = createSlice({
     name : "fruits",
-    initialState:{
+     initialState:{
         game:[] ,
         isLoading:false,
         isSuccess:false,
         isError:false,
-        
+        searchItem:"",
     },
     reducers:{
-
+        search: (state ,action) =>{
+            state.searchItem = action.payload
+        }
         
     },
 
@@ -41,7 +43,7 @@ const fruitSlice = createSlice({
 })
 
 
-export const { cart} = fruitSlice.actions
+export const { cart , search} = fruitSlice.actions
 export default fruitSlice.reducer
 
 
@@ -52,3 +54,11 @@ export const getFruits = createAsyncThunk("FETCH/FRUITS" , async()=>{
         
     }
 })
+
+
+// export const filterSearch = (state) =>{
+//     const {game , searchItem} = state.fruits
+//     const itemSearch = state.searchItem.toLowerCase().trim()
+
+//     return game.filter((anu)=> anu.name.toLowerCase().includes(itemSearch))
+// }

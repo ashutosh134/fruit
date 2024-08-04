@@ -20,26 +20,30 @@ const Home = () => {
       <div className='flex flex-col md:flex-row justify-between items-center pt-16'>
         <div className='md:w-1/2'>
           <h1 className='text-5xl md:text-8xl text-red-500 font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
-          <img src='/assests/image-2.avif' className='w-full md:max-w-lg mx-auto mt-8' alt="Fresh fruits" />
+          <img src='/assests/ram.jpg' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" />
         </div>
 
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <img src="/assests/image-1.jpg" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
-          <marquee><h1 className="text-4xl md:text-6xl text-center text-red-500 py-4 font-bold">FOREVER FRESH</h1></marquee>
-        </div>
+          <img src="/assests/fram.jpg" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
+                  </div>
       </div>
+
+      <marquee><h1 className="text-4xl md:text-6xl text-center text-amber-500 py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
+
 
     
       <hr className='w-full h-1 bg-teal-500 mt-16 mb-8' />
 
+
       
       <h1 className='text-5xl md:text-6xl text-center text-red-500 font-bold mb-12'>OUR PRODUCTS</h1>
+
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
      
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/dragon.jpg" className="w-full h-[245px] object-cover" alt="Fruits" />
+            <img src="/assests/asf.jpg" className="w-full h-[270px] object-cover" alt="Fruits" />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">FRUITS</h3>
@@ -55,7 +59,7 @@ const Home = () => {
        
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/carrot.jpg" className="w-full h-[245px] object-cover" alt="Vegetables" />
+            <img src="/assests/pile.jpg" className="w-full h-[270px] " alt="Vegetables" />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">VEGETABLES</h3>
@@ -71,7 +75,7 @@ const Home = () => {
       
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/milk.jpg" className="w-full h-[245px] object-cover" alt="Dairy" />
+            <img src="/assests/glass.jpg" className="w-full h-[270px] " alt="Dairy" />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">DAIRY</h3>
@@ -84,31 +88,48 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+      
+      <div className='my-2'>
+        <img src='/assests/vegetable.jpg'/>
+      </div>
+
     
-      <section className=' my-12 py-16 px-12 bg-red-500'>
+      <section className=' mb-12 py-16 px-12 bg-lime-400 rounded'>
+        
         <h2 className='text-4xl md:text-5xl text-center font-bold mb-8'>What Our Customers Say</h2>
+
         <div className='flex flex-col md:flex-row justify-between gap-8'>
         
-          <div className='bg-gray-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"Excellent quality produce, always fresh and delivered on time!"</p>
             <p className='mt-4 font-semibold text-right'>- Jane Doe</p>
           </div>
 
     
-          <div className='bg-gray-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"A fantastic variety of fruits and vegetables. Highly recommended!"</p>
             <p className='mt-4 font-semibold text-right'>- John Smith</p>
           </div>
 
       
-          <div className='bg-gray-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"The best online shopping experience for fresh produce!"</p>
             <p className='mt-4 font-semibold text-right'>- Mary Johnson</p>
           </div>
         </div>
       </section>
-    
+
+          
+<div >
+<img src="/assests/aa.jpg" alt=""  className='w-full h-'/>
+</div>
+
     </div>
+
+
+
   )
 }
 
