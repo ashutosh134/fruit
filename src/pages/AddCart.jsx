@@ -61,26 +61,47 @@ const AddCart = () => {
   if (cartItem.length === 0) {
     return (
       
-      <div className='p-20 container '>
-        <div className='text-center'>
-          
-          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 mx-auto mb-6">
-            <path d="M6 2L4 6H1v2h1l2 9h14l2-9h1V6h-3l-2-4h-8zM7 21c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm10 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-            <path d="M1 1h2l3 8h13l3-8h2"/>
-          </svg>
-          <h1 className='text-6xl text-center text-red-500 font-bold py-2'>NO PRODUCT IN THE CART</h1>
-          <p className='text-lg text-gray-600 mt-2'>Looks like your cart is empty. Start shopping to add items!</p>
-          <Link to={"/"}>
-            <button type="button"
-              className="w-full flex items-center justify-center gap-3 mt-6 px-6 py-3 bg-amber-400 text-base text-gray-800 font-semibold rounded-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 3h2l3 8h13l3-8h2m-9 16a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-              </svg>
-              Click here for Shopping
-            </button>
-          </Link>
-        </div>
+      <div className='px-4 py-10 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:px-12 lg:py-24 container'>
+      <div className='text-center'>
+        <img
+          src="/assests/product.jpg"
+          alt="Product image"
+          className='w-64 sm:w-72 md:w-80 lg:w-96 mx-auto mb-6'
+        />
+        
+        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-red-500 font-bold py-2'>
+          NO PRODUCT IN THE CART
+        </h1>
+        <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mt-2'>
+          Looks like your cart is empty. Start shopping to add items!
+        </p>
+        <Link to={"/"}>
+          <button
+            type="button"
+            className="w-full flex items-center justify-center gap-3 mt-6 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-amber-400 text-sm sm:text-base md:text-lg lg:text-xl text-gray-800 font-semibold rounded-xl"
+            aria-label="Click here for Shopping"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-gray-800"
+              aria-hidden="true"
+            >
+              <path d="M3 3h2l3 8h13l3-8h2m-9 16a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+            </svg>
+            Click here for Shopping
+          </button>
+        </Link>
       </div>
+    </div>
+    
     );
   }
 
@@ -88,7 +109,7 @@ const AddCart = () => {
   
 
   return (
-
+    
     <div className='py-[50px] px-6'>
       <div className="font-sans md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4">
         <div className="grid md:grid-cols-3 gap-4">

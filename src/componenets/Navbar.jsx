@@ -19,13 +19,15 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
 
 <header className='shadow-md bg-teal-400 font-[sans-serif] tracking-wide relative z-50 sticky top-0'>
     <section
-      className='flex items-center flex-wrap lg:justify-between gap-4 py-3 sm:px-10 px-4 border-gray-200 border-b min-h-[75px]'>
+      className='flex items-center  flex-wrap lg:justify-between gap-4 py-3 sm:px-10 px-4 border-gray-200 border-b min-h-[75px]'>
   
     
   
       <Link to={"/"} className="shrink-0"><img src="/assests/new.png" alt="logo"
-          className='md:w-[80px] w-16' />
+          className='md:w-[100px] h-[50px] w-16' />
       </Link>
+    
+      
   
       <div className="lg:absolute lg:right-10 flex items-center ml-auto space-x-8">
         <span className="relative">
