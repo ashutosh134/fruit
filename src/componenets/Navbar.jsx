@@ -17,7 +17,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
 
   return ( 
 
-<header className='shadow-md bg-teal-400 font-[sans-serif] tracking-wide relative z-50 sticky top-0'>
+<header className='shadow-md bg-amber-400 font-[sans-serif] tracking-wide relative z-50 sticky top-0'>
     <section
       className='flex items-center  flex-wrap lg:justify-between gap-4 py-3 sm:px-10 px-4 border-gray-200 border-b min-h-[75px]'>
   
