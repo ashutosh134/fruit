@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addTo, wishListAdd } from '../features/fruits/cartSlice'
-import { toast } from 'react-toastify'
+import { toast } from 'react-hot-toast'
 import { getFruits } from '../features/fruits/fruitSlice'
 
 const Vegetables = () => {
@@ -18,13 +18,18 @@ const Vegetables = () => {
    const handleAdd = (fruits) =>{
 
    dispatch(addTo(fruits))
-   toast.success("Added Successfully")
+   toast.success("Added Successfully" , {
+    position:"top-right"
+   })
    }
 
    
    const handleAddWishList = (wishList) =>{
     dispatch(wishListAdd(wishList))
-    toast.success("added in wishList")
+    toast.success("Added In WishList" , {
+      position:"top-right",
+      icon:"❤"
+    })
   }
 
   const filteredFruits = game.filter((vegetables)=> vegetables.category === "Vegetables")

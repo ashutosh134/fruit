@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { move, clearWish, removeCart, wishTot } from '../features/fruits/cartSlice'
 import { Link, useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify'
+import { toast } from 'react-hot-toast'
 
 const WishList = () => {
 
@@ -21,17 +21,24 @@ const WishList = () => {
 
     dispatch(move(id))
     
-    toast.success("Added Successfully")
+    toast.success("Added Successfully", {
+     position:"top-right"
+    })
     }
   
   const handleWishRemove = (id) =>{
     dispatch(removeCart(id))
+    toast.success("Removed from wishList", {
+      position:"top-right"
+     })
   }
 
   const clearWishList = ()=>{
     dispatch(clearWish())
     localStorage.removeItem("wishList")
-    toast.success("wishList Is Cleared Successfully")
+    toast.success("wishList Is Cleared Successfully",{
+      position:"top-right"
+    })
     
   }
 

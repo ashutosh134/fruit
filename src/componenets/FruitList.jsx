@@ -2,7 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector} from 'react-redux'
 
 import { addTo, wishListAdd } from '../features/fruits/cartSlice'
-import { toast } from 'react-toastify'
+// import { toast } from 'react-toastify'
+import toast, { Toaster } from 'react-hot-toast';
 
 const FruitList = ({fruit}) => {
 
@@ -14,12 +15,17 @@ const FruitList = ({fruit}) => {
     const handleAdd = (fruits) =>{
 
     dispatch(addTo(fruits))
-    toast.success("Added Successfully")
+    toast.success("Added Successfully", {
+      position:'top-right'
+    })
     }
 
     const handleAddWishList = (wishList) =>{
       dispatch(wishListAdd(wishList))
-      toast.success("added in wishList")
+      toast.success("Added In WishList" , {
+        position:'top-right',
+        icon:"❤"
+      })
     }
 
 

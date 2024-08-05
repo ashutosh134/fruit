@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addTo, clear, decrease, remove, calculateTotal, updateTax, updateShipping, wishListAdd } from '../features/fruits/cartSlice';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 
 const AddCart = () => {
   const dispatch = useDispatch();
@@ -25,24 +25,35 @@ const AddCart = () => {
 
   const handleAdd = (item) => {
     dispatch(addTo(item))
-    toast.success("Added Successfully")
+    toast.success("Added Successfully",{
+      position:"top-right"
+    })
     dispatch(calculateTotal())
   }
 
   const handleRemove = (id) => {
     dispatch(remove(id))
     dispatch(calculateTotal())
+    toast.success("Item Removed From Cart" ,{
+      position:"top-right",
+    })
   }
 
   const handleClear = () => {
     dispatch(clear())
     localStorage.removeItem("cartItem")
-    toast.info("Cart Is Cleared Successfully")
+    toast.success("Cart Is Cleared Successfully" , {
+      position:"top-right"
+    })
   }
 
 
   const handleAddWishList = (wishList) =>{
     dispatch(wishListAdd(wishList))
+    toast.success("Added In WishList" , {
+      position:"top-right",
+      icon:"❤"
+    })
     
     
   }

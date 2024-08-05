@@ -19,6 +19,7 @@ import TermsAnd from './pages/TermsAnd';
 import WishList from './pages/WishList';
 import Buy from './pages/Buy';
 import Cooking from './pages/Cooking';
+import { Toaster , ToastBar } from 'react-hot-toast';
 
 
 const App = () => {
@@ -26,7 +27,8 @@ const App = () => {
 
    
     <Router>
-      <ToastContainer/>
+      {/* <ToastContainer/> */}
+      <Toaster/>
   
    <Navbar/>
    

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { addTo, wishListAdd } from '../features/fruits/cartSlice'
 import { useDispatch, useSelector } from 'react-redux'
-import { toast } from 'react-toastify'
+import { toast } from 'react-hot-toast'
 import { getFruits } from '../features/fruits/fruitSlice'
 
 const Cooking = () => {
@@ -19,12 +19,17 @@ const Cooking = () => {
     const handleAdd = (fruits) =>{
  
     dispatch(addTo(fruits))
-    toast.success("Added Successfully")
+    toast.success("Added Successfully" , {
+      position:'top-right'
+    })
     }
  
     const handleAddWishList = (wishList) =>{
      dispatch(wishListAdd(wishList))
-     toast.success("added in wishList")
+     toast.success("Added In wishList" , {
+      position:"top-right",
+      icon:"❤"
+     })
    }
 
    

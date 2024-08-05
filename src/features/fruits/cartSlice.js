@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 const exist = JSON.parse(localStorage.getItem("cartItem"))
 const wishExist = JSON.parse(localStorage.getItem("wishList"))
@@ -58,7 +58,9 @@ const cartSlice = createSlice({
     
                 localStorage.setItem("cartItem" , JSON.stringify(state.cartItem))
 
-                toast.info("Remove From Cart")
+                toast.success("Item Removed From Cart",{
+                  position:"top-right"
+                })
             }
         },
 
