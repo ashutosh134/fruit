@@ -3,9 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <div className='py-8 px-6'>
-        <main className="container mx-auto my-8 p-20 bg-teal-300   shadow-md">
-        <h1 className="text-3xl font-bold mb-4">About Us</h1>
-        <p className="text-lg mb-4">
+        <main className="container mx-auto my-8 p-4 bg-teal-300   shadow-md">
+        <h1 className="text-3xl font-bold mb-4 text-center">About Us</h1>
+        <p className="text-lg mb-4 ">
             Welcome to Fresh Harvest Market, your one-stop destination for the freshest and finest fruits and vegetables in town! Since our inception in 2010, we have been committed to bringing you high-quality produce sourced from local farms and trusted suppliers.
         </p>
         <p className="text-lg mb-4">
@@ -35,6 +35,7 @@ const About = () => {
                 <p className="mt-2">Emily leads our customer service team, making sure that every shopping experience is pleasant and satisfying. Her dedication to customer care is a key part of our success.</p>
             </div>
         </div>
+        
     </main>
     </div>
   )

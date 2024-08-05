@@ -37,9 +37,9 @@ const Cooking = () => {
      if (isLoading) {
       return (
         <div className="flex flex-col items-center justify-center p-20">
-                   <img src="/assests/qq.jpg" alt="" className='w-[320px] h-[200px]' />
+                   <img src="/assests/qq.jpg" alt="" className='w-80' />
           <h1 className="mt-4 text-center text-6xl text-red-500 font-bold">
-            LOADING ......
+            LOADING ...
           </h1>
         </div>
       );

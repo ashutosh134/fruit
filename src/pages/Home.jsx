@@ -15,16 +15,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='container mx-auto pb-20'>
+    <div className='container mx-auto pb-0'>
     
       <div className='flex flex-col md:flex-row justify-between items-center pt-16'>
         <div className='md:w-1/2'>
           <h1 className='text-5xl md:text-8xl text-red-500 font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
-          <img src='/assests/ram.jpg' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" />
+          <img src='/assests/new-4.png' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" />
         </div>
 
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <img src="/assests/fram.jpg" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
+          <img src="/assests/new.png" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
                   </div>
       </div>
 
@@ -32,7 +32,7 @@ const Home = () => {
 
 
     
-      <hr className='w-full h-1 bg-teal-500 mt-16 mb-8' />
+      <hr className='w-full h-1 bg-teal-500 mt-8 mb-8' />
 
 
       
@@ -96,7 +96,7 @@ const Home = () => {
       </div>
 
     
-      <section className=' mb-12 py-16 px-12 bg-lime-400 rounded'>
+      <section className=' mb-12 py-16 px-6 bg-lime-400 rounded'>
         
         <h2 className='text-4xl md:text-5xl text-center font-bold mb-8'>What Our Customers Say</h2>
 

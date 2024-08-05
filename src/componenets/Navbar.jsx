@@ -23,7 +23,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
   
     
   
-      <Link to={"/"} className="shrink-0"><img src="/assests/image-4.png" alt="logo"
+      <Link to={"/"} className="shrink-0"><img src="/assests/new.png" alt="logo"
           className='md:w-[80px] w-16' />
       </Link>
   
