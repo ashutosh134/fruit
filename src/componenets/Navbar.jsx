@@ -17,7 +17,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
 
   return ( 
 
-<header className='shadow-md bg-amber-400 font-[sans-serif] tracking-wide relative z-50 sticky top-0'>
+<header className='shadow-lg backdrop-blur-lg    font-[sans-serif] tracking-wide relative z-50 sticky top-0'>
     <section
       className='flex items-center  flex-wrap lg:justify-between gap-4 py-3 sm:px-10 px-4 border-gray-200 border-b min-h-[75px]'>
   
@@ -84,10 +84,10 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
           className='flex  lg:gap-12 sm:gap-2 md:gap-2 '>
           
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/"}
-              className='hover:text-[#007bff] text-[#007bff] font-semibold block lg:text-[16px]'>Home</Link></li>
+              className='hover:text-[#007bff] text-black font-semibold block lg:text-[16px]'>Home</Link></li>
           <li className='group max-lg:border-b max-lg:px-3 max-lg:py-3 relative'>
             <Link to={"/product"}
-              className='hover:text-[#007bff] hover:fill-[#007bff] text-red-500 font-semibold lg:text-[16px] block'>Products<svg
+              className='hover:text-[#007bff] hover:fill-[#007bff] text-black font-semibold lg:text-[16px] block'>Products<svg
                 xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block"
                 viewBox="0 0 24 24">
                 <path
@@ -174,9 +174,9 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
           </li>
           
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/about"}
-              className='hover:text-[#007bff] text-red-500 font-semibold lg:text-[16px] block'>About</Link></li>
+              className='hover:text-[#007bff] text-black font-semibold lg:text-[16px] block'>About</Link></li>
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/contact"}
-              className='hover:text-[#007bff] text-red-500 font-semibold lg:text-[16px] block '>Contact</Link></li>
+              className='hover:text-[#007bff] text-black font-semibold lg:text-[16px] block '>Contact</Link></li>
           
         </ul>
       </div>
