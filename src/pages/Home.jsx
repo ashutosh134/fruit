@@ -20,15 +20,15 @@ const Home = () => {
       <div className='flex flex-col md:flex-row justify-between items-center pt-16'>
         <div className='md:w-1/2'>
           <h1 className='text-5xl md:text-8xl text-6xl font-extrabold leading-tight text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
-          <img src='/assests/new-4.png' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" />
+          <img src='/assests/new-4.png' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" loading='lazy' />
         </div>
 
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <img src="/assests/new.png" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" />
+          <img src="/assests/new.png" className='w-full mx-auto rounded-lg' alt="Fresh vegetables" loading='lazy' />
                   </div>
       </div>
 
-      <marquee><h1 className="text-4xl md:text-6xl text-center text-amber-500  py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
+      <marquee ><h1 className="text-4xl md:text-6xl text-center text-amber-500  py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
 
 
     
@@ -43,7 +43,7 @@ const Home = () => {
      
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/asf.jpg" className="w-full h-[270px] object-cover" alt="Fruits" />
+            <img src="/assests/asf.jpg" className="w-full h-[270px] object-cover" alt="Fruits" loading='lazy' />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">FRUITS</h3>
@@ -59,7 +59,7 @@ const Home = () => {
        
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/pile.jpg" className="w-full h-[270px] " alt="Vegetables" />
+            <img src="/assests/pile.jpg" className="w-full h-[270px] " alt="Vegetables" loading='lazy' />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">VEGETABLES</h3>
@@ -75,7 +75,7 @@ const Home = () => {
       
         <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
-            <img src="/assests/glass.jpg" className="w-full h-[270px] " alt="Dairy" />
+            <img src="/assests/glass.jpg" className="w-full h-[270px] " alt="Dairy" loading='lazy' />
           </div>
           <div className="p-6 text-center">
             <h3 className="text-xl md:text-2xl font-bold">DAIRY</h3>
@@ -92,7 +92,7 @@ const Home = () => {
 
       
       <div className='my-2'>
-        <img src='/assests/vegetable.jpg'/>
+        <img src='/assests/vegetable.jpg' loading='lazy'/>
       </div>
 
     
@@ -123,7 +123,7 @@ const Home = () => {
 
           
 <div >
-<img src="/assests/aa.jpg" alt=""  className='w-full h-'/>
+<img src="/assests/aa.jpg" alt=""  className='w-full h-' loading='lazy'/>
 </div>
 
     </div>

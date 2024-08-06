@@ -44,7 +44,7 @@ const Fruit = () => {
     if (isLoading) {
       return (
         <div className="flex flex-col items-center justify-center p-20 ">
-         <img src="/assests/fruit.jpg" alt="" className='w-80' />
+         <img src="/assests/fruit.jpg" alt="" className='w-80' loading='lazy'/>
           <h1 className="mt-4 text-center text-6xl text-red-500 font-bold">
             LOADING ...
           </h1>
