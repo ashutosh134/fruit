@@ -51,7 +51,7 @@ const Home = () => {
             <h3 className="text-xl md:text-2xl font-bold">FRUITS</h3>
             <p className="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui. Maecenas</p>
             <Link to={"/fruit"}>
-              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-white text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700">
+              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-700">
                 FRUITS
               </button>
             </Link>
@@ -67,7 +67,7 @@ const Home = () => {
             <h3 className="text-xl md:text-2xl font-bold">VEGETABLES</h3>
             <p className="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui. Maecenas</p>
             <Link to={"/vegetables"}>
-              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-white text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700">
+              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-700">
                 VEGETABLES
               </button>
             </Link>
@@ -83,7 +83,7 @@ const Home = () => {
             <h3 className="text-xl md:text-2xl font-bold">DAIRY</h3>
             <p className="mt-3 text-sm md:text-base text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at fermentum dui. Maecenas</p>
             <Link to={"/dairy"}>
-              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-white text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700">
+              <button type="button" className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm md:text-base tracking-wider font-semibold border-none outline-none bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-700">
                 DAIRY
               </button>
             </Link>
