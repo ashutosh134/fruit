@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className=' py-16 px-6'>
-    <div className="container mx-auto bg-teal-300 px-4 py-8">
+    <div className="container mx-auto bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 px-4 py-8">
 
 <header className="text-center mb-8">
     <h1 className="text-3xl font-bold">Contact Us</h1>
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div>
                 <button type="submit"
-                    className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-white bg-lime-600 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-black bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                     Send Message
                 </button>
             </div>

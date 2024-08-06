@@ -2,7 +2,7 @@ import React from 'react'
 
 const TermsAnd = () => {
   return (<div className=' px-6'>
-    <div class="container mx-auto my-16 bg-teal-300  px-6 py-8">
+    <div class="container mx-auto my-16 bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200  px-6 py-8">
 
     <header class="text-center mb-8">
         <h1 class="text-3xl font-bold">Terms and Conditions</h1>

@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className='container mx-auto pb-0'>
-    
+  
       <div className='flex flex-col md:flex-row justify-between items-center pt-16'>
         <div className='md:w-1/2'>
           <h1 className='text-5xl md:text-8xl text-6xl font-extrabold leading-tight text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
@@ -28,20 +28,22 @@ const Home = () => {
                   </div>
       </div>
 
-      <marquee ><h1 className="text-4xl md:text-6xl text-center text-amber-500  py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
+      {/* <marquee ><h1 className="text-4xl md:text-6xl text-center   py-2 text-rose-700 font-bold text-center">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee> */}
 
-
+      <img src="" alt="" />
     
-      <hr className='w-full h-1 bg-teal-500 mt-8 mb-8' />
+      <hr className='w-full h-1 bg-lime-500 mt-8 mb-8' />
 
 
       
-      <h1 className='text-5xl md:text-6xl text-center text-red-500 font-bold mb-12'>OUR PRODUCTS</h1>
+      <h1 className='text-5xl md:text-6xl text-center font-bold mb-12 text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold text-center'>
+  OUR PRODUCTS
+</h1>
 
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
      
-        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/asf.jpg" className="w-full h-[270px] object-cover" alt="Fruits" loading='lazy' />
           </div>
@@ -57,7 +59,7 @@ const Home = () => {
         </div>
 
        
-        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/pile.jpg" className="w-full h-[270px] " alt="Vegetables" loading='lazy' />
           </div>
@@ -73,7 +75,7 @@ const Home = () => {
         </div>
 
       
-        <div className="bg-teal-300 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
+        <div className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 rounded-lg overflow-hidden mx-auto">
           <div className="min-h-[245px]">
             <img src="/assests/glass.jpg" className="w-full h-[270px] " alt="Dairy" loading='lazy' />
           </div>
@@ -96,25 +98,25 @@ const Home = () => {
       </div>
 
     
-      <section className=' mb-12 py-16 px-6 bg-lime-400 rounded'>
+      <section className=' mb-12 py-16 px-6 bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 rounded'>
         
         <h2 className='text-4xl md:text-5xl text-center font-bold mb-8'>What Our Customers Say</h2>
 
         <div className='flex flex-col md:flex-row justify-between gap-8'>
         
-          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"Excellent quality produce, always fresh and delivered on time!"</p>
             <p className='mt-4 font-semibold text-right'>- Jane Doe</p>
           </div>
 
     
-          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"A fantastic variety of fruits and vegetables. Highly recommended!"</p>
             <p className='mt-4 font-semibold text-right'>- John Smith</p>
           </div>
 
       
-          <div className='bg-lime-200 p-6 rounded-lg shadow-lg'>
+          <div className='bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 p-6 rounded-lg shadow-lg'>
             <p className='text-lg italic'>"The best online shopping experience for fresh produce!"</p>
             <p className='mt-4 font-semibold text-right'>- Mary Johnson</p>
           </div>

@@ -80,16 +80,16 @@ const AddCart = () => {
           className='w-64 sm:w-72 md:w-80 lg:w-96 mx-auto mb-6'
         />
         
-        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-red-500 font-bold py-2'>
+        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold py-2'>
           NO PRODUCT IN THE CART
         </h1>
-        <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mt-2'>
+        <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-black mt-2'>
           Looks like your cart is empty. Start shopping to add items!
         </p>
         <Link to={"/"}>
           <button
             type="button"
-            className="w-full flex items-center justify-center gap-3 mt-6 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-5 bg-amber-400 text-sm sm:text-base md:text-lg lg:text-xl text-gray-800 font-semibold rounded-xl"
+            className="w-full flex items-center justify-center gap-3 mt-6 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-10 lg:py-4 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 text-sm sm:text-base md:text-lg lg:text-xl text-black font-semibold rounded-xl"
             aria-label="Click here for Shopping"
           >
             <svg
@@ -124,7 +124,7 @@ const AddCart = () => {
     <div className='py-[50px] px-6'>
       <div className="font-sans md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4">
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="md:col-span-2 bg-teal-300 p-4 rounded-md">
+          <div className="md:col-span-2 bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 p-4 rounded-md">
             <h2 className="text-2xl font-bold text-gray-800">Cart</h2>
             <hr className="border-red-500 mt-4 mb-8" />
 
@@ -132,7 +132,7 @@ const AddCart = () => {
               <div key={item.id} className="space-y-4">
                 <div className="grid grid-cols-3 items-center gap-4">
                   <div className="col-span-2 flex items-center py-4 gap-4">
-                    <div className="w-24 h-24 shrink-0 bg-red-500 p-2 rounded-md">
+                    <div className="w-24 h-24 shrink-0 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 p-2 rounded-md">
                       <img src={item.img} className="w-full h-full object-contain" alt={item.name} />
                     </div>
                     <div>
@@ -237,7 +237,7 @@ const AddCart = () => {
           </div> */}
 
 
-<div className="bg-white rounded-md px-4 py-6 h-max shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
+<div className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 rounded-md px-4 py-6 h-max shadow-[0_2px_12px_-3px_rgba(6,81,237,0.3)]">
                     <ul className="text-gray-800 space-y-4">
                         <li className="flex flex-wrap gap-4 text-">Shipping <span className="ml-auto font-bold">${shipping}</span></li>
                         <li className="flex flex-wrap gap-4 text-"> Tax <span className="ml-auto font-bold">${tax}</span></li>
@@ -247,8 +247,8 @@ const AddCart = () => {
                     </ul>
 
                     <div className="mt-8 space-y-2">
-                <Link to={"/buy"}>       <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-teal-300 hover:bg-red-500 text-black rounded-md">Buy Now</button></Link>
-                     <Link to={"/"} className='' >  <button type="button" className=" my-2 text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-amber-400 hover:bg-amber-600 text-gray-800 border border-gray-300 rounded-md">Continue Shopping  </button></Link>
+                <Link to={"/buy"}>       <button type="button" className="text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-500 text-black rounded-md">Buy Now</button></Link>
+                     <Link to={"/"} className='' >  <button type="button" className=" my-2 text-sm px-4 py-2.5 w-full font-semibold tracking-wide bg-teal-400 hover:bg-amber-600 text-gray-800 border border-gray-300 rounded-md">Continue Shopping  </button></Link>
                     </div>
 
                     <div className="mt-4 flex flex-wrap justify-center gap-4">

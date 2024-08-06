@@ -30,7 +30,7 @@ const Fruit = () => {
 
    const handleAddWishList = (wishList) =>{
     dispatch(wishListAdd(wishList))
-    toast.success("added in wishList" , {
+    toast.success("Added in WishList" , {
       position:"top-right",
       icon:"❤"
     })
@@ -57,7 +57,7 @@ const Fruit = () => {
 
 
 
-    <div className='py-8'> <h1 className='text-center text-amber-500 font-bold text-5xl py-4'>FRUITS</h1>
+    <div className='py-8 '> <h1 className='text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text  font-bold text-5xl py-4'>FRUITS</h1>
     
 
 
@@ -66,7 +66,7 @@ const Fruit = () => {
 
       {
         filteredFruits.map((fruit)=>(
-          <div key={fruit.id} class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+          <div key={fruit.id} class="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
           <div class="min-h-[245px]">
             <img src={fruit.img} class="w-full rounded-lg" />
           </div>
@@ -85,7 +85,7 @@ const Fruit = () => {
               </div>
             </div>
             <button type="button"
-              class="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700" onClick={()=>handleAdd(fruit)}>Add</button>
+              class="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-700" onClick={()=>handleAdd(fruit)}>Add</button>
           </div>
         </div>
         ))

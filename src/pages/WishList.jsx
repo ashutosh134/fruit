@@ -47,12 +47,12 @@ const WishList = () => {
       <div className='px-4 py-10 sm:px-8 sm:py-16 md:px-12 md:py-20 lg:px-16 lg:py-24 container'>
       <div className='text-center'>
         <img src="/assests/boy.jpg" alt="Person looking at a wishlist" className='w-64 sm:w-72 md:w-80 lg:w-96 mx-auto' />
-        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-red-500 font-bold py-2'>YOUR WISHLIST IS EMPTY</h1>
-        <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mt-2'>Looks like you haven't added any items to your wishlist. Start browsing and add your favorites!</p>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold py-2'>YOUR WISHLIST IS EMPTY</h1>
+        <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-black mt-2'>Looks like you haven't added any items to your wishlist. Start browsing and add your favorites!</p>
         <Link to={"/"}>
           <button
             type="button"
-            className="w-full flex items-center justify-center gap-3 mt-6 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-amber-400 text-sm sm:text-base md:text-lg text-gray-800 font-semibold rounded-xl"
+            className="w-full flex items-center justify-center gap-3 mt-6 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 text-sm sm:text-base md:text-lg text-black font-semibold rounded-xl"
             aria-label="Start Shopping"
           >
             <svg
@@ -81,12 +81,12 @@ const WishList = () => {
   }
 
   return (
-    <div className="bg-gray-100 py-8">
+    <div className="bg-white py-8">
       <div className="container mx-auto p-6">
         <h1 className="text-5xl font-bold mb-6 text-center  ">My Wishlist</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {wishList.map((wish) => (
-            <div key={wish.id} className="bg-white rounded-lg shadow-md p-4">
+            <div key={wish.id} className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 rounded-lg shadow-md p-4">
               <img src={wish.img} alt={wish.name} className="rounded-md mb-2" />
               <h1 className="text-lg font-bold">{wish.name}</h1>
               <h1 className="text-xl font-bold py-4">${wish.price}</h1>
@@ -96,7 +96,7 @@ const WishList = () => {
                 </button>
                 <button
                   type="button"
-                  className="flex items-center justify-center gap-3 font-semibold text-gray-800 bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-lg"
+                  className="flex items-center justify-center gap-3 font-semibold text-gray-800 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-yellow-500 px-4 py-2 rounded-lg"
                   onClick={()=>handleAdd(wish.id)}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 512 512">
@@ -113,7 +113,7 @@ const WishList = () => {
         </div>
 
         
-        <div className="mt-6 bg-white p-4 rounded-lg shadow-md">
+        <div className="mt-6 bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 p-4 rounded-lg shadow-md">
           <div className="flex justify-between text-lg font-semibold">
             <span>Total Amount</span>
             <span>$ {wishTotal}</span>

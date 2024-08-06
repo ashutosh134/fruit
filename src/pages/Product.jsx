@@ -34,7 +34,7 @@ const Product = () => {
 
   return (
     <div className='py-6'>
-    <h1 className='text-center text-5xl font-bold text-red-600 py-4'>ALL PRODUCTS</h1>
+    <h1 className='text-center text-5xl font-bold text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text  py-4'>ALL PRODUCTS</h1>
   
     <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-3'>
     

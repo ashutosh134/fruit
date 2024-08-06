@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='py-8 px-6'>
-        <main className="container mx-auto my-8 p-4 bg-teal-300   shadow-md">
+        <main className="container mx-auto my-8 p-4 bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200   shadow-md">
         <h1 className="text-3xl font-bold mb-4 text-center">About Us</h1>
         <p className="text-lg mb-4 ">
             Welcome to Fresh Harvest Market, your one-stop destination for the freshest and finest fruits and vegetables in town! Since our inception in 2010, we have been committed to bringing you high-quality produce sourced from local farms and trusted suppliers.
@@ -19,17 +19,17 @@ const About = () => {
         </p>
         <h2 className="text-2xl font-semibold mt-8 mb-4">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
+            <div className="p-4 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">mr. Jane</h3>
                 <p className="text-gray-600">Founder & CEO</p>
                 <p className="mt-2">Jane is passionate about fresh produce and healthy living. With over 15 years of experience in the industry, she ensures that Fresh Harvest Market remains a leader in quality and customer satisfaction.</p>
             </div>
-            <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
+            <div className="p-4 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">John Smith</h3>
                 <p className="text-gray-600">Head of Sourcing</p>
                 <p className="mt-2">John manages our partnerships with local farmers and suppliers, ensuring that we bring the best produce to our customers. His expertise and relationships in the industry help us maintain high standards.</p>
             </div>
-            <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
+            <div className="p-4 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-2">Emily Johnson</h3>
                 <p className="text-gray-600">Customer Service Manager</p>
                 <p className="mt-2">Emily leads our customer service team, making sure that every shopping experience is pleasant and satisfying. Her dedication to customer care is a key part of our success.</p>

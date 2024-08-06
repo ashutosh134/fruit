@@ -74,14 +74,14 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
 
 
 
-    <div className='flex flex-wrap justify-center px-10 py-2  relative'>
+    <div className='flex flex-wrap justify-center px-10 py-2  relative '>
   
       <div 
-        className=''>
+        className=' '>
        
   
         <ul
-          className='flex  lg:gap-12 sm:gap-2 md:gap-2 '>
+          className='flex  lg:gap-12 sm:gap-2 md:gap-2  '>
           
           <li className='max-lg:border-b max-lg:px-3 max-lg:py-3'><Link to={"/"}
               className='hover:text-[#007bff] text-black font-semibold block lg:text-[16px]'>Home</Link></li>
@@ -96,10 +96,10 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
               </svg>
             </Link>
             <ul
-              className='absolute top-5 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-white max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
+              className='absolute top-5 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500'>
               <li className='border-b py-3'>
                 <Link to={"/fruit"}
-                  className='hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block'>
+                  className='hover:text-[#007bff] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
  <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20px"
@@ -117,7 +117,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
               </li>
               <li className='border-b py-3'>
                 <Link to={"/vegetables"}
-                  className='hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block'>
+                  className='hover:text-[#007bff] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
                 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20px"
@@ -136,7 +136,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
               </li>
               <li className='border-b py-3'>
                 <Link to={"/dairy"}
-                  className='hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block'>
+                  className='hover:text-[#007bff] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
                  <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20px"
@@ -154,7 +154,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
               </li>
               <li className='border-b py-3'>
                 <Link to={"/cooking"}
-                  className='hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block'>
+                  className='hover:text-[#007bff] hover:fill-[#007bff] text-black font-semibold text-[15px] block'>
                  <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20px"

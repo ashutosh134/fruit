@@ -54,14 +54,14 @@ const Dairy = () => {
 
 
     <div className='py-8'>
-        <h1 className="text-center text-5xl text-red-500 font-bold py-4">DAIRY PRODUCTS</h1>
+        <h1 className="text-center text-5xl text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text  font-bold py-4">DAIRY PRODUCTS</h1>
 
         <div className='grid   lg:grid-cols-3 '>
    {
      
      dairyFiltered.map((dairy) =>(
         <div key={dairy.id}
-      className="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] border p-2 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
       <div className="min-h-[245px]">
         <img src={dairy.img} className="w-full rounded-lg" />
       </div>
@@ -80,7 +80,7 @@ const Dairy = () => {
               </div>
             </div>
         <button type="button"
-          className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-red-500 hover:bg-red-700"onClick={()=>handleAdd(dairy)}>Add</button>
+          className="mt-6 px-5 py-2.5 w-full rounded-lg text-black text-sm tracking-wider font-semibold border-none outline-none bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-red-700"onClick={()=>handleAdd(dairy)}>Add</button>
       </div>
     </div>
      ))

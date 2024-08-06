@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 
 const FooterOne = () => {
   return (
-    
-    <div className='bg-teal-400 font-[sans-serif] tracking-wide  '>
-       <footer className="bg-teal-400 p-10 font-[sans-serif] tracking-wide">
+    <>
+           <footer className="bg-gradient-to-b from-yellow-300 via-orange-200 to-red-200 p-10 font-[sans-serif] tracking-wide">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className=" lg:flex lg:items-center ">
           <a href="javascript:void(0)">
@@ -46,7 +45,7 @@ const FooterOne = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold mb-6 text-red-500">Contact Us</h4>
+          <h4 className="text-lg font-semibold mb-6 text-black">Contact Us</h4>
           <ul className="space-y-4">
             <li>
               <Link to={"/contact"} className="text-black hover:text-white text-sm">Email</Link>
@@ -61,7 +60,7 @@ const FooterOne = () => {
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold mb-6 text-red-500">Information</h4>
+          <h4 className="text-lg font-semibold mb-6 text-black">Information</h4>
           <ul className="space-y-4">
             <li>
               <Link to={"/about"} className="text-black hover:text-white text-sm">About Us</Link>
@@ -79,8 +78,9 @@ const FooterOne = () => {
       <p className='text-black text-sm mt-10'>© 2024 All Rights Reserved.
       </p>
     </footer>
-    
-     <footer className="bg-red-500 text-white p-4 mt-8">
+     <div className='bg-teal-300 font-[sans-serif] tracking-wide  '>
+
+     <footer className=" text-black p-2">
         <div className="container mx-auto text-center">
             <p>&copy; 2024 Fresh Harvest Market. All rights reserved.</p>
             <p><Link to={"/privacy"} className="hover:underline">Privacy Policy</Link> | <Link to={"/terms"} className="hover:underline">Terms of Service</Link></p>
@@ -88,6 +88,7 @@ const FooterOne = () => {
         
     </footer> 
     </div>
+    </>
   )
 }
 
