@@ -128,7 +128,7 @@ const cartSlice = createSlice({
 
           wishTot : (state, action)=>{
             const subWishTotal = state.wishList.reduce((p,c)=>{
-              return p + c.price * (c.whishQuantity || 1);
+              return p + c.price * (c.wishQuantity || 1);
 
             },0)
 
@@ -154,15 +154,20 @@ const cartSlice = createSlice({
 
 
           move : (state,action) =>{
-            const moveToCart = state.wishList.find((item)=>item.id === action.payload)
+            const moveToCart = state.wishList.find((item)=>item.id === action.payload.id)
 
             if(moveToCart){
-              state.cartItem.push(moveToCart)
-              state.wishList = state.wishList.filter((item)=>item.id !== action.payload)
+              const demp = {...action.payload , quantity:1}
+               state.cartItem.push(demp)
+          
+               state.wishList = state.wishList.filter((item)=>item.id !== action.payload.id)
             }
 
-            localStorage.setItem("wishList" , JSON.stringify(state.wishList))
+          
+            
             localStorage.setItem("cartItem" , JSON.stringify(state.cartItem))
+
+            localStorage.setItem("wishList" , JSON.stringify(state.wishList))
 
           }
 

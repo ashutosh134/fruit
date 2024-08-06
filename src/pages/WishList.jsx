@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { move, clearWish, removeCart, wishTot } from '../features/fruits/cartSlice'
+import { move, clearWish, removeCart, wishTot, calculateTotal } from '../features/fruits/cartSlice'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 
@@ -20,6 +20,7 @@ const WishList = () => {
   const handleAdd = (id) =>{
 
     dispatch(move(id))
+    // console.log(id)
     
     toast.success("Added Successfully", {
      position:"top-right"
@@ -97,7 +98,7 @@ const WishList = () => {
                 <button
                   type="button"
                   className="flex items-center justify-center gap-3 font-semibold text-gray-800 bg-gradient-to-b from-yellow-400 via-orange-300 to-red-300 hover:bg-yellow-500 px-4 py-2 rounded-lg"
-                  onClick={()=>handleAdd(wish.id)}
+                  onClick={()=>handleAdd(wish)}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 512 512">
                     <path

@@ -28,9 +28,9 @@ const Home = () => {
                   </div>
       </div>
 
-      {/* <marquee ><h1 className="text-4xl md:text-6xl text-center   py-2 text-rose-700 font-bold text-center">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee> */}
+      {/* <div><img src="/assests/bber.jpg" alt="" loading='lazy' className='' />  </div> */}
 
-      <img src="" alt="" />
+    
     
       <hr className='w-full h-1 bg-lime-500 mt-8 mb-8' />
 
