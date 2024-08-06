@@ -19,7 +19,7 @@ const Home = () => {
     
       <div className='flex flex-col md:flex-row justify-between items-center pt-16'>
         <div className='md:w-1/2'>
-          <h1 className='text-5xl md:text-8xl text-red-500 font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
+          <h1 className='text-5xl md:text-8xl text-6xl font-extrabold leading-tight text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold text-center'>FRESH FRUITS <span className='text-lime-500 block'>ALWAYS</span> </h1>
           <img src='/assests/new-4.png' className='w-full md:max-w-lg mx-auto mt-8 lg:mb-24' alt="Fresh fruits" />
         </div>
 
@@ -28,7 +28,7 @@ const Home = () => {
                   </div>
       </div>
 
-      <marquee><h1 className="text-4xl md:text-6xl text-center text-amber-500 py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
+      <marquee><h1 className="text-4xl md:text-6xl text-center text-amber-500  py-2 font-bold">FOREVER FRESH FRUITS & VEGETABLES  </h1></marquee>
 
 
     

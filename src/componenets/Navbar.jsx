@@ -74,7 +74,7 @@ const {cartItem , wishList} = useSelector(state=>state.cart)
 
 
 
-    <div className='flex flex-wrap justify-center px-10 py-3 relative'>
+    <div className='flex flex-wrap justify-center px-10 py-2  relative'>
   
       <div 
         className=''>
