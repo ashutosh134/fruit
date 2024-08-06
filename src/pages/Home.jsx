@@ -28,7 +28,7 @@ const Home = () => {
                   </div>
       </div>
 
-      {/* <div><img src="/assests/bber.jpg" alt="" loading='lazy' className='' />  </div> */}
+      {/* <div><img src="/assests/bber.jpg" alt="" loading='lazy' className='w-80' />  </div> */}
 
     
     

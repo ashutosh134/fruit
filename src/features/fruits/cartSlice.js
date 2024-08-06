@@ -157,9 +157,16 @@ const cartSlice = createSlice({
             const moveToCart = state.wishList.find((item)=>item.id === action.payload.id)
 
             if(moveToCart){
-              const demp = {...action.payload , quantity:1}
-               state.cartItem.push(demp)
-          
+            
+              const already = state.cartItem.findIndex((item)=>item.id === action.payload.id)
+
+              if(already >= 0 ){
+               state.cartItem[already].quantity += 1;
+              }else{
+                const demp = {...action.payload , quantity:1}
+                state.cartItem.push(demp)
+              }
+        
                state.wishList = state.wishList.filter((item)=>item.id !== action.payload.id)
             }
 
