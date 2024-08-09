@@ -26,7 +26,7 @@ const toggleMobileMenu = () => {
   
     
 
-<nav className="shadow-xl backdrop-blur-lg   text-white p-4 sticky top-0 ">
+<nav className="shadow-xl bg-red-300 bg-opacity-50 backdrop-blur-lg   text-white p-4 sticky top-0 ">
       <div className="container mx-auto flex items-center justify-between">
        
         <div className="flex items-center space-x-4">
