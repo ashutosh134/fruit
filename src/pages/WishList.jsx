@@ -45,7 +45,7 @@ const WishList = () => {
 
   if (wishList.length === 0) {
     return (
-      <div className='px-4 py-10 sm:px-8 sm:py-16 md:px-12 md:py-20 lg:px-16 lg:py-24 container'>
+      <div className='px-4 py-10 sm:px-8 sm:py-16 md:px-12 md:py-20 lg:px-16 lg:py-24  container'>
       <div className='text-center'>
         <img src="/assests/boy.jpg" alt="Person looking at a wishlist" className='w-64 sm:w-72 md:w-80 lg:w-96 mx-auto' />
         <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-transparent bg-gradient-to-b from-yellow-400 via-orange-500 to-red-600 bg-clip-text font-bold py-2'>YOUR WISHLIST IS EMPTY</h1>
