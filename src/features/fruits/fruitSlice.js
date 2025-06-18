@@ -50,6 +50,7 @@ export default fruitSlice.reducer
 export const getFruits = createAsyncThunk("FETCH/FRUITS" , async()=>{
     try {
         return await fetchFruits()
+        // console.log(fetchFruits())
     } catch (error) {
         
     }
