@@ -105,7 +105,7 @@ const toggleMobileMenu = () => {
         </div>
       </div>
 
-      <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden U {isMobileMenuOpen ? 'block' : 'hidden'}`}>
         <div className="flex flex-col items-center mt-4 space-y-4">
           <Link to={"/"} className="hover:text-gray-400 text-black">Home</Link>
           

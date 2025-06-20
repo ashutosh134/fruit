@@ -103,17 +103,27 @@ const cartSlice = createSlice({
             state.shipping = action.payload;
           },
           
+wishListAdd: (state, action) => {
+  const index = state.wishList.findIndex((item) => item.id === action.payload.id);
 
-          wishListAdd : (state ,action) =>{
-            const updatedList = state.wishList.findIndex((item) => item.id === action.payload.id)
+  if (index === -1) {
+    state.wishList.push(action.payload);
+    toast.success("Added to WishList", {
+      position: "top-right",
+      icon: "❤️",
+    });
+  } else {
+   state.wishList = state.wishList.filter((item) => item.id !== action.payload.id);
+ 
+    toast.success("Removed from WishList", {
+      position: "top-right",
+      icon: "💔",
+    });
+  }
 
-            if(updatedList === -1){
-              state.wishList.push(action.payload)
-             
-            }
+  localStorage.setItem("wishList", JSON.stringify(state.wishList));
+},
 
-            localStorage.setItem("wishList" ,JSON.stringify(state.wishList))
-          },
 
           removeCart : (state ,action) =>{
             const remove = state.wishList.filter((item)=>item.id !== action.payload)
